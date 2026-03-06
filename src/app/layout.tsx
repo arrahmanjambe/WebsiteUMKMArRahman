@@ -5,6 +5,7 @@ import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CartSidebar from "@/components/CartSidebar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arrahman-bambu.id"),
@@ -88,6 +89,7 @@ export default function RootLayout({
             <Footer />
           </CartProvider>
         </PaletteProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
