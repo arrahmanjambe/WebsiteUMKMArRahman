@@ -4,6 +4,7 @@ import FeaturedProducts from "@/components/home/FeaturedProducts";
 import StatsSection from "@/components/home/StatsSection";
 import AchievementsSection from "@/components/home/AchievementsSection";
 import CTASection from "@/components/home/CTASection";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Beranda — Anyaman Bambu AR Rahman",
