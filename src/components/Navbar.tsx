@@ -24,7 +24,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -38,7 +38,7 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
-            ? "bg-[var(--color-surface)]/95 backdrop-blur-sm shadow-sm border-b border-[var(--color-surface-alt)]"
+            ? "bg-[var(--color-surface)]/95 navbar-blur backdrop-blur-sm shadow-sm border-b border-[var(--color-surface-alt)]"
             : "bg-transparent"
         )}
       >

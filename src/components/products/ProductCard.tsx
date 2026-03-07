@@ -19,10 +19,11 @@ export default function ProductCard({ product }: Props) {
 
   return (
     <article
-      className="group rounded-2xl overflow-hidden border flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+      className="group rounded-2xl overflow-hidden border flex flex-col transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-xl"
       style={{
         backgroundColor: "var(--color-surface)",
         borderColor: "var(--color-surface-alt)",
+        contain: "layout style",
       }}
     >
       {/* Image */}
@@ -31,7 +32,9 @@ export default function ProductCard({ product }: Props) {
           src={product.image}
           alt={product.name}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
@@ -116,7 +119,7 @@ export default function ProductCard({ product }: Props) {
           <button
             onClick={handleAdd}
             disabled={!product.inStock}
-            className="w-11 h-11 rounded-full flex items-center justify-center text-white transition-all hover:scale-110 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="w-11 h-11 rounded-full flex items-center justify-center text-white transition-[transform,opacity] hover:scale-110 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
             style={{ backgroundColor: "var(--color-primary)" }}
             aria-label={`Tambah ${product.name} ke keranjang`}
           >

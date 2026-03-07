@@ -55,7 +55,9 @@ export default function AchievementsSection() {
                 src={unesco.image}
                 alt="UNESCO Creative Cities Network visit"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
+                loading="lazy"
               />
               <div
                 className="absolute inset-0"

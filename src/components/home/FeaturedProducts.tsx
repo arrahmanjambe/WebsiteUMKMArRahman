@@ -48,12 +48,13 @@ export default function FeaturedProducts() {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {FEATURED.map((product, index) => (
-            <article
+              <article
               key={product.id}
-              className="group rounded-2xl overflow-hidden border flex flex-col transition-all hover:-translate-y-1 hover:shadow-xl"
+              className="group rounded-2xl overflow-hidden border flex flex-col transition-[transform,box-shadow] hover:-translate-y-1 hover:shadow-xl"
               style={{
                 backgroundColor: "var(--color-surface)",
                 borderColor: "var(--color-surface-alt)",
+                contain: "layout style",
               }}
             >
               {/* Image */}
@@ -62,7 +63,9 @@ export default function FeaturedProducts() {
                   src={product.image}
                   alt={product.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
                 />
                 {product.badge && (
                   <span

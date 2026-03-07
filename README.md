@@ -1,6 +1,6 @@
 # 🎋 Anyaman Bambu AR Rahman — Website
 
-Website produk UMKM anyaman bambu premium dari Tasikmalaya, dibangun dengan **Next.js 14**, **TypeScript**, dan **Tailwind CSS**.
+Website produk UMKM anyaman bambu premium dari Tangerang, dibangun dengan **Next.js 14**, **TypeScript**, dan **Tailwind CSS**.
 
 ---
 

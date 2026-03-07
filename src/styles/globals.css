@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+/* NOTE: Google Fonts loaded via <link> in layout.tsx — NO @import here (render-blocking) */
 
 :root {
   /* Default: Bambu Natural */
@@ -27,66 +27,38 @@
 }
 
 html {
+  /* scroll-behavior: smooth only on desktop — on mobile it can cause jank */
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
 body {
   background-color: var(--color-surface);
   color: var(--color-text-main);
   font-family: var(--font-body);
-  transition: background-color 0.4s ease, color 0.4s ease;
+  /* FIX: Only transition what's needed on body — not global wildcard */
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
 
-/* Bamboo texture overlay utility */
-.bamboo-texture {
-  position: relative;
-}
-.bamboo-texture::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 40px,
-      rgba(0,0,0,0.02) 40px,
-      rgba(0,0,0,0.02) 41px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 60px,
-      rgba(0,0,0,0.015) 60px,
-      rgba(0,0,0,0.015) 61px
-    );
-  pointer-events: none;
-  z-index: 0;
+/* FIX: Removed old *, *::before, *::after transition rule — it applied to EVERY element
+   causing hundreds of nodes to track transition state. Now we use targeted transitions only. */
+
+/* Palette-aware elements: only opt-in elements get color transitions */
+.palette-transition {
+  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
-/* Grain overlay */
-.grain-overlay::after {
-  content: '';
-  position: fixed;
-  inset: -200%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.025;
-  pointer-events: none;
-  z-index: 9999;
-  animation: grain 8s steps(10) infinite;
+/* FIX: 'transition: all' was transitioning every CSS property on links/buttons.
+   Now only transitioning compositable properties (opacity, transform, color). */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
-
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10% { transform: translate(-5%, -5%); }
-  20% { transform: translate(-10%, 5%); }
-  30% { transform: translate(5%, -10%); }
-  40% { transform: translate(-5%, 15%); }
-  50% { transform: translate(-10%, 5%); }
-  60% { transform: translate(15%, 0%); }
-  70% { transform: translate(0%, 10%); }
-  80% { transform: translate(-15%, 0%); }
-  90% { transform: translate(10%, 5%); }
+button {
+  transition: opacity 0.2s ease, transform 0.15s ease;
 }
 
 /* Typography utilities */
@@ -98,12 +70,36 @@ body {
   text-wrap: balance;
 }
 
-/* Palette transition */
-*, *::before, *::after {
-  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+/* Bamboo texture — static, no animation, pointer-events none */
+.bamboo-texture {
+  position: relative;
 }
-a, button {
-  transition: all 0.2s ease;
+.bamboo-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0,0,0,0.018) 40px, rgba(0,0,0,0.018) 41px),
+    repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(0,0,0,0.012) 60px, rgba(0,0,0,0.012) 61px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* FIX: grain-overlay removed entirely.
+   Old implementation: position:fixed; inset:-200% = element was 500% of viewport
+   + infinite animation = constant GPU repaint drain on mobile.
+   Replaced with a static noise pseudo on desktop only, no animation. */
+@media (min-width: 1024px) {
+  .grain-overlay::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 9999;
+    /* Static — no animation */
+  }
 }
 
 /* Custom scrollbar */
@@ -158,4 +154,43 @@ a, button {
 /* Prose fix for answer text with newlines */
 .faq-answer {
   white-space: pre-line;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Marquee: force GPU compositing, contain layout changes */
+.marquee-track {
+  will-change: transform;
+  contain: layout;
+}
+
+/* Cards: use contain to isolate layout — prevent parent reflow on hover */
+.card-hover {
+  contain: layout style;
+  transform: translateZ(0); /* promote to own layer */
+}
+
+/* Hero blobs: isolate to own compositing layer, hidden on mobile */
+.hero-blob {
+  will-change: auto; /* don't pre-allocate layers on mobile */
+  transform: translateZ(0);
+}
+@media (max-width: 768px) {
+  .hero-blob {
+    display: none; /* blur-3xl very expensive on mobile GPU */
+  }
+}
+
+/* Navbar: avoid backdrop-blur on mobile — expensive */
+@media (max-width: 768px) {
+  .navbar-blur {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* Image: avoid layout shift */
+.img-cover {
+  object-fit: cover;
+  display: block;
 }

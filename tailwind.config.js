@@ -55,3 +55,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// Add will-change-transform as a Tailwind safelist shortcut

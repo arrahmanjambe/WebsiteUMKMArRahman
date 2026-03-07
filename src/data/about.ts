@@ -3,10 +3,10 @@ export const ABOUT_DATA = {
     name: "Anyaman Bambu AR Rahman",
     tagline: "Dari Tangan Pengrajin Lokal, Untuk Dunia",
     established: "2018",
-    location: "Desa Mulyasari, Kecamatan Ciawi, Tasikmalaya, Jawa Barat",
+    location: "Desa Mulyasari, Kecamatan Ciawi, Tangerang, Jawa Barat",
     coordinates: { lat: -7.2575, lng: 108.1057 },
     description:
-      "Anyaman Bambu AR Rahman lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tasikmalaya. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
+      "Anyaman Bambu AR Rahman lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
     vision:
       "Menjadi produsen anyaman bambu terkemuka yang mengangkat budaya lokal ke pasar internasional sambil menjaga kelestarian lingkungan dan kesejahteraan pengrajin.",
     mission: [
@@ -22,9 +22,9 @@ export const ABOUT_DATA = {
     name: "Ahmad Rahman",
     title: "Founder & Master Craftsman",
     age: 42,
-    hometown: "Tasikmalaya, Jawa Barat",
+    hometown: "Tangerang, Jawa Barat",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-    bio: `Ahmad Rahman tumbuh besar di tengah keluarga pengrajin bambu di Tasikmalaya. Sejak usia 12 tahun, ia telah belajar menganyam dari sang kakek yang merupakan pengrajin topi pantai terkemuka di daerahnya.
+    bio: `Ahmad Rahman tumbuh besar di tengah keluarga pengrajin bambu di Tangerang. Sejak usia 12 tahun, ia telah belajar menganyam dari sang kakek yang merupakan pengrajin topi pantai terkemuka di daerahnya.
 
 Setelah menyelesaikan pendidikan di SMK Kerajinan, Ahmad memutuskan untuk tidak sekadar meneruskan tradisi keluarga, melainkan mengangkatnya ke level berikutnya. Pada 2018, ia mendirikan Anyaman Bambu AR Rahman dengan tekad untuk membuktikan bahwa produk lokal Indonesia mampu bersaing di pasar internasional.
 
@@ -37,7 +37,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
   heritage: {
     title: "Warisan yang Hidup",
     description:
-      "Tasikmalaya dikenal sebagai 'Kota Resik' dan salah satu pusat kerajinan tangan terbesar di Jawa Barat. Tradisi menganyam bambu di sini telah berlangsung selama berabad-abad, dengan teknik yang diturunkan dari generasi ke generasi.",
+      "Tangerang dikenal sebagai 'Kota Resik' dan salah satu pusat kerajinan tangan terbesar di Jawa Barat. Tradisi menganyam bambu di sini telah berlangsung selama berabad-abad, dengan teknik yang diturunkan dari generasi ke generasi.",
     timeline: [
       {
         year: "Tahun 1970-an",
@@ -67,7 +67,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       {
         year: "2023",
         title: "UNESCO Recognition",
-        description: "Mendapat perhatian dari UNESCO Creative Cities Network dalam program city visit ke Tasikmalaya.",
+        description: "Mendapat perhatian dari UNESCO Creative Cities Network dalam program city visit ke Tangerang.",
       },
     ],
   },
@@ -76,8 +76,8 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
     {
       id: "ws-001",
       title: "Workshop Anyaman untuk Pemuda Desa",
-      organizer: "Dinas Koperasi & UMKM Kab. Tasikmalaya",
-      location: "Tasikmalaya, Jawa Barat",
+      organizer: "Dinas Koperasi & UMKM Kab. Tangerang",
+      location: "Tangerang, Jawa Barat",
       year: "2021",
       participants: 45,
       description: "Program pelatihan anyaman bambu untuk pemuda desa sebagai bekal wirausaha.",
@@ -104,7 +104,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       id: "ws-004",
       title: "Workshop Eco-Craft untuk Ibu PKK",
       organizer: "PKK Kecamatan Ciawi",
-      location: "Tasikmalaya, Jawa Barat",
+      location: "Tangerang, Jawa Barat",
       year: "2023",
       participants: 60,
       description: "Memberdayakan ibu-ibu PKK dengan keterampilan anyaman sebagai tambahan penghasilan.",
@@ -124,7 +124,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
     title: "Diakui Dunia: UNESCO Creative Cities",
     subtitle: "Menarik Perhatian Dunia",
     description:
-      "Pada 2023, delegasi dari UNESCO Creative Cities Network mengunjungi Tasikmalaya dan menjadikan AR Rahman sebagai salah satu showcas utama kerajinan lokal. Kunjungan ini menjadi pengakuan internasional bahwa tradisi anyaman bambu Tasikmalaya layak mendapat perhatian dunia.",
+      "Pada 2023, delegasi dari UNESCO Creative Cities Network mengunjungi Tangerang dan menjadikan AR Rahman sebagai salah satu showcas utama kerajinan lokal. Kunjungan ini menjadi pengakuan internasional bahwa tradisi anyaman bambu Tangerang layak mendapat perhatian dunia.",
     highlights: [
       "Dikunjungi delegasi dari 8 negara anggota UNESCO Creative Cities",
       "Dipresentasikan sebagai model UMKM berkelanjutan berbasis kearifan lokal",

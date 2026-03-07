@@ -56,7 +56,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: "var(--color-text-muted)" }}>
-              Kerajinan anyaman bambu tradisional dari Tasikmalaya, Jawa Barat. Dibuat dengan tangan oleh
+              Kerajinan anyaman bambu tradisional dari Tangerang, Jawa Barat. Dibuat dengan tangan oleh
               pengrajin lokal, untuk dunia.
             </p>
             <div className="flex gap-3 mt-5">
@@ -116,7 +116,7 @@ export default function Footer() {
           {[
             {
               icon: MapPin,
-              text: "Desa Mulyasari, Kec. Ciawi, Tasikmalaya, Jawa Barat",
+              text: "Desa Mulyasari, Kec. Ciawi, Tangerang, Jawa Barat",
             },
             {
               icon: Phone,
@@ -157,7 +157,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Anyaman Bambu AR Rahman. Hak cipta dilindungi.
           </p>
           <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
-            Dibuat dengan ❤️ dari Tasikmalaya
+            Dibuat dengan ❤️ dari Tangerang
           </p>
         </div>
       </div>

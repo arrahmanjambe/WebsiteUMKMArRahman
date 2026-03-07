@@ -24,7 +24,9 @@ export default function FounderBio() {
                 src={founder.image}
                 alt={founder.name}
                 fill
+                sizes="(max-width: 1024px) 100vw, 400px"
                 className="object-cover"
+                loading="lazy"
               />
               <div
                 className="absolute inset-0"

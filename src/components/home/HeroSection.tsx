@@ -21,16 +21,17 @@ export default function HeroSection() {
         className="absolute inset-0 -z-10"
         style={{ backgroundColor: "var(--color-surface)" }}
       >
-        {/* Decorative large circle */}
+        {/* FIX: hero-blob class hides these on mobile — blur-3xl on 600px+ elements
+            was extremely expensive on mobile GPU (large filter radius + compositing layer) */}
         <div
-          className="absolute -right-32 -top-32 w-[600px] h-[600px] rounded-full opacity-10 blur-3xl"
+          className="hero-blob absolute -right-32 -top-32 w-[600px] h-[600px] rounded-full opacity-10 blur-3xl"
           style={{ backgroundColor: "var(--color-primary)" }}
         />
         <div
-          className="absolute -left-20 bottom-0 w-[400px] h-[400px] rounded-full opacity-8 blur-3xl"
+          className="hero-blob absolute -left-20 bottom-0 w-[400px] h-[400px] rounded-full opacity-8 blur-3xl"
           style={{ backgroundColor: "var(--color-tertiary)" }}
         />
-        {/* Bamboo grid pattern */}
+        {/* Bamboo grid — static, no cost */}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -51,7 +52,7 @@ export default function HeroSection() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] animate-pulse" />
-            Kerajinan Bambu Tasikmalaya · Sejak 2018
+            Kerajinan Bambu Tangerang · Sejak 2018
           </div>
 
           {/* Heading */}
@@ -67,7 +68,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base md:text-lg leading-relaxed max-w-md" style={{ color: "var(--color-text-muted)" }}>
-            Topi pantai dan peci berbahan bambu alami, dibuat tangan oleh pengrajin lokal Tasikmalaya.
+            Topi pantai dan peci berbahan bambu alami, dibuat tangan oleh pengrajin lokal Tangerang.
             Ramah lingkungan, tahan lama, dan penuh cerita.
           </p>
 
@@ -75,7 +76,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-all hover:scale-105 hover:shadow-lg active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-[transform,opacity] hover:scale-105 hover:shadow-lg active:scale-[0.98]"
               style={{ backgroundColor: "var(--color-primary)" }}
             >
               Lihat Produk
@@ -83,7 +84,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium border transition-all hover:bg-[var(--color-surface-alt)]"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium border transition-colors hover:bg-[var(--color-surface-alt)]"
               style={{
                 borderColor: "var(--color-text-muted)",
                 color: "var(--color-text-main)",
@@ -119,6 +120,7 @@ export default function HeroSection() {
               src="https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?w=800&q=80"
               alt="Topi anyaman bambu premium AR Rahman"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -175,11 +177,13 @@ export default function HeroSection() {
         style={{
           borderColor: "var(--color-surface-alt)",
           backgroundColor: "var(--color-surface-alt)",
+          contain: "layout",
         }}
       >
-        <div className="flex animate-marquee whitespace-nowrap gap-0">
+        {/* FIX: marquee-track promotes to GPU compositor layer via will-change:transform */}
+        <div className="marquee-track flex animate-marquee whitespace-nowrap gap-0">
           {Array.from({ length: 2 }).map((_, i) => (
-            <div key={i} className="flex gap-0 flex-shrink-0">
+            <div key={i} className="flex gap-0 flex-shrink-0" aria-hidden={i === 1}>
               {[
                 "🎋 Anyaman Tradisional",
                 "🌿 100% Ramah Lingkungan",

@@ -24,14 +24,14 @@ export default function CartSidebar() {
       {/* Backdrop */}
       <div
         onClick={closeCart}
-        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[80] transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/40 z-[80] transition-opacity duration-300 ${
           state.isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       />
 
       {/* Drawer */}
       <aside
-        className={`fixed right-0 top-0 bottom-0 w-full max-w-sm bg-[var(--color-surface)] z-[90] flex flex-col shadow-2xl transition-transform duration-300 ${
+        className={`fixed right-0 top-0 bottom-0 w-full max-w-sm bg-[var(--color-surface)] z-[90] flex flex-col shadow-2xl transition-transform duration-300 will-change-transform ${
           state.isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -93,6 +93,7 @@ export default function CartSidebar() {
                       src={item.product.image}
                       alt={item.product.name}
                       fill
+                      sizes="64px"
                       className="object-cover"
                     />
                   </div>

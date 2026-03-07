@@ -19,17 +19,20 @@ export const PaletteProvider = ({ children }: { children: React.ReactNode }) => 
   const [currentPalette, setCurrentPalette] = useState<ColorPalette>(DEFAULT_PALETTE);
 
   const applyPalette = (palette: ColorPalette) => {
-    const root = document.documentElement;
-    const { colors } = palette;
-    root.style.setProperty("--color-primary", colors.primary);
-    root.style.setProperty("--color-primary-light", colors.primaryLight);
-    root.style.setProperty("--color-primary-dark", colors.primaryDark);
-    root.style.setProperty("--color-secondary", colors.secondary);
-    root.style.setProperty("--color-tertiary", colors.tertiary);
-    root.style.setProperty("--color-surface", colors.surface);
-    root.style.setProperty("--color-surface-alt", colors.surfaceAlt);
-    root.style.setProperty("--color-text-main", colors.textMain);
-    root.style.setProperty("--color-text-muted", colors.textMuted);
+    // Use requestAnimationFrame to batch CSS variable changes in one paint cycle
+    requestAnimationFrame(() => {
+      const root = document.documentElement;
+      const { colors } = palette;
+      root.style.setProperty("--color-primary", colors.primary);
+      root.style.setProperty("--color-primary-light", colors.primaryLight);
+      root.style.setProperty("--color-primary-dark", colors.primaryDark);
+      root.style.setProperty("--color-secondary", colors.secondary);
+      root.style.setProperty("--color-tertiary", colors.tertiary);
+      root.style.setProperty("--color-surface", colors.surface);
+      root.style.setProperty("--color-surface-alt", colors.surfaceAlt);
+      root.style.setProperty("--color-text-main", colors.textMain);
+      root.style.setProperty("--color-text-muted", colors.textMuted);
+    });
   };
 
   useEffect(() => {

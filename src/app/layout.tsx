@@ -5,36 +5,35 @@ import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CartSidebar from "@/components/CartSidebar";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arrahman-bambu.id"),
   title: {
-    default: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tasikmalaya",
+    default: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tangerang",
     template: "%s | Anyaman Bambu AR Rahman",
   },
   description:
-    "Kerajinan anyaman bambu tradisional premium dari Tasikmalaya, Jawa Barat. Topi pantai, peci, dan custom order. Ramah lingkungan, buatan tangan, ekspor global.",
+    "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Topi pantai, peci, dan custom order. Ramah lingkungan, buatan tangan, ekspor global.",
   keywords: [
     "anyaman bambu",
     "topi pantai bambu",
     "peci bambu",
-    "kerajinan tasikmalaya",
+    "kerajinan Tangerang",
     "souvenir bambu",
     "kerajinan lokal",
     "ar rahman bambu",
     "bambu anyaman",
     "custom order bambu",
-    "UMKM tasikmalaya",
+    "UMKM Tangerang",
   ],
   openGraph: {
     type: "website",
     locale: "id_ID",
     url: "https://arrahman-bambu.id",
     siteName: "Anyaman Bambu AR Rahman",
-    title: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tasikmalaya",
+    title: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tangerang",
     description:
-      "Kerajinan anyaman bambu tradisional premium dari Tasikmalaya, Jawa Barat. Ramah lingkungan, buatan tangan, ekspor global.",
+      "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Ramah lingkungan, buatan tangan, ekspor global.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?w=1200&q=80",
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Anyaman Bambu AR Rahman",
-    description: "Kerajinan anyaman bambu tradisional premium dari Tasikmalaya.",
+    description: "Kerajinan anyaman bambu tradisional premium dari Tangerang.",
   },
   robots: {
     index: true,
@@ -73,12 +72,16 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <head>
+        {/* Preconnect before any font requests */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* display=swap: text visible immediately with fallback font, no FOIT */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
           rel="stylesheet"
         />
+        {/* Viewport meta hint for mobile rendering */}
+        <meta name="theme-color" content="#4A7C59" />
       </head>
       <body className="grain-overlay">
         <PaletteProvider>
@@ -89,7 +92,6 @@ export default function RootLayout({
             <Footer />
           </CartProvider>
         </PaletteProvider>
-        <SpeedInsights />
       </body>
     </html>
   );
