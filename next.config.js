@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "picsum.photos",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
     // Serve AVIF for supported browsers (smaller file, faster load on mobile)
     formats: ["image/avif", "image/webp"],

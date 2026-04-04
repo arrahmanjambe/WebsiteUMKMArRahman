@@ -8,7 +8,7 @@ const FOOTER_LINKS = [
       { href: "/", label: "Beranda" },
       { href: "/products", label: "Produk" },
       { href: "/about", label: "Tentang Kami" },
-      { href: "/kemitraan", label: "Kemitraan" },
+      // { href: "/kemitraan", label: "Kemitraan" },
       { href: "/faq", label: "FAQ" },
     ],
   },
@@ -18,7 +18,7 @@ const FOOTER_LINKS = [
       { href: "/products?cat=topi", label: "Topi Pantai" },
       { href: "/products?cat=peci", label: "Peci" },
       { href: "/products?cat=custom", label: "Custom Order" },
-      { href: "/kemitraan", label: "Jadi Reseller" },
+      // { href: "/kemitraan", label: "Jadi Reseller" },
     ],
   },
 ];
@@ -61,7 +61,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-5">
               {[
-                { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
+                { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arrahmanjambe_" },
                 { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
               ].map(({ icon: Icon, label, href }) => (
                 <a
@@ -116,7 +116,7 @@ export default function Footer() {
           {[
             {
               icon: MapPin,
-              text: "Desa Mulyasari, Kec. Ciawi, Tangerang, Jawa Barat",
+              text: "Desa Ancol Pasir, Kec. Jambe, Tangerang, Banten",
             },
             {
               icon: Phone,
@@ -157,7 +157,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Anyaman Bambu AR Rahman. Hak cipta dilindungi.
           </p>
           <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
-            Dibuat dengan ❤️ dari Tangerang
+            Dibuat bersama dengan Universitas Prasetiya Mulya
           </p>
         </div>
       </div>

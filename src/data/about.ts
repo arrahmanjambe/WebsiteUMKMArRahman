@@ -3,10 +3,10 @@ export const ABOUT_DATA = {
     name: "Anyaman Bambu AR Rahman",
     tagline: "Dari Tangan Pengrajin Lokal, Untuk Dunia",
     established: "2018",
-    location: "Desa Mulyasari, Kecamatan Ciawi, Tangerang, Jawa Barat",
-    coordinates: { lat: -7.2575, lng: 108.1057 },
+    location: "MGM5+24R, Ancol Pasir, Kec. Jambe, Kabupaten Tangerang, Banten 15720, Indonesia",
+    coordinates: { lat: -6.3174472, lng: 106.5077027 },
     description:
-      "Anyaman Bambu AR Rahman lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
+      "Anyaman Bambu AR-Rahman lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
     vision:
       "Menjadi produsen anyaman bambu terkemuka yang mengangkat budaya lokal ke pasar internasional sambil menjaga kelestarian lingkungan dan kesejahteraan pengrajin.",
     mission: [
@@ -23,7 +23,7 @@ export const ABOUT_DATA = {
     title: "Founder & Master Craftsman",
     age: 42,
     hometown: "Tangerang, Jawa Barat",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    image: "https://res.cloudinary.com/dpctuucy8/image/upload/f_auto,q_auto/Logo_1_de5iqu",
     bio: `Ahmad Rahman tumbuh besar di tengah keluarga pengrajin bambu di Tangerang. Sejak usia 12 tahun, ia telah belajar menganyam dari sang kakek yang merupakan pengrajin topi pantai terkemuka di daerahnya.
 
 Setelah menyelesaikan pendidikan di SMK Kerajinan, Ahmad memutuskan untuk tidak sekadar meneruskan tradisi keluarga, melainkan mengangkatnya ke level berikutnya. Pada 2018, ia mendirikan Anyaman Bambu AR Rahman dengan tekad untuk membuktikan bahwa produk lokal Indonesia mampu bersaing di pasar internasional.
@@ -37,37 +37,43 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
   heritage: {
     title: "Warisan yang Hidup",
     description:
-      "Tangerang dikenal sebagai 'Kota Resik' dan salah satu pusat kerajinan tangan terbesar di Jawa Barat. Tradisi menganyam bambu di sini telah berlangsung selama berabad-abad, dengan teknik yang diturunkan dari generasi ke generasi.",
+      "Kerajinan anyaman bambu di Tangerang telah menjadi bagian dari identitas budaya masyarakat sejak lama. Tidak hanya sebagai mata pencaharian, tetapi juga sebagai warisan turun-temurun yang mencerminkan nilai ketelitian, kreativitas, dan ketahanan dalam menghadapi perubahan zaman.",
     timeline: [
       {
         year: "Tahun 1970-an",
-        title: "Warisan Keluarga",
-        description: "Kakek Ahmad Rahman mulai merintis usaha anyaman bambu di Desa Mulyasari.",
+        title: "Akar Tradisi",
+        description:
+          "Sejak era kolonial, masyarakat Kecamatan Jambe dan sekitarnya telah menjadikan anyaman bambu sebagai bagian dari kehidupan. Rahman mulai belajar sejak SD dari kakeknya, seorang pengrajin topi pantai terkemuka, yang mengajarkannya dasar-dasar menganyam dan nilai di balik setiap helai bambu.",
       },
       {
-        year: "Tahun 2000-an",
-        title: "Generasi Kedua",
-        description: "Ayah Ahmad meneruskan usaha dengan mulai memasarkan ke kota-kota besar Jawa Barat.",
+        year: "Tahun 2002-an",
+        title: "Masa Jaya",
+        description:
+          "Puncak kejayaan terjadi ketika topi bambu menjadi atribut wajib Pramuka. Permintaan meningkat pesat, hingga Rahman mampu memproduksi sekitar 8.000 topi per minggu, mencerminkan besarnya peran industri kerajinan bambu saat itu.",
+      },
+      {
+        year: "Tahun 2012-an",
+        title: "Masa Kelam",
+        description:
+          "Setelah perubahan kebijakan atribut Pramuka, topi bambu tidak lagi menjadi seragam wajib. Permintaan menurun drastis dan banyak pengrajin kehilangan pasar. Rahman sempat menutup usahanya, namun kemudian berinovasi dengan menciptakan produk seperti topi dan peci anyaman bambu modern.",
       },
       {
         year: "2018",
-        title: "Lahirnya AR Rahman",
-        description: "Ahmad mendirikan brand resmi dan memulai transformasi digital serta ekspansi pasar.",
+        title: "Masa Transformasi",
+        description:
+          "Rahman berhasil membangkitkan kembali usahanya dengan mengembangkan brand Aarahman. Transformasi ini menjadi titik balik kebangkitan kerajinan bambu dengan pendekatan yang lebih modern dan inovatif.",
       },
       {
-        year: "2020",
-        title: "Ekspansi Digital",
-        description: "Mulai berjualan online dan menembus pasar Bali serta beberapa kota besar Indonesia.",
-      },
-      {
-        year: "2022",
-        title: "Ekspor Perdana",
-        description: "Produk AR Rahman untuk pertama kalinya diekspor ke Australia dan Malaysia.",
-      },
-      {
-        year: "2023",
+        year: "2024",
         title: "UNESCO Recognition",
-        description: "Mendapat perhatian dari UNESCO Creative Cities Network dalam program city visit ke Tangerang.",
+        description:
+          "Kerja keras Rahman mendapat pengakuan internasional ketika sentra kerajinannya masuk nominasi 4 besar UNESCO Creative Cities Network. Dalam kunjungan tim UNESCO, ratusan penganyam turut menunjukkan bahwa tradisi ini masih hidup dan dijaga dengan penuh kebanggaan.",
+      },
+      {
+        year: "Sekarang",
+        title: "Regenerasi dan Harapan",
+        description:
+          "Keberlanjutan kerajinan bergantung pada generasi penerus. Anak bungsu Rahman mulai menunjukkan ketertarikan untuk melanjutkan usaha ini. Diharapkan inovasi baru dari generasi muda dapat membawa kerajinan bambu Tangerang kembali ke masa kejayaannya.",
       },
     ],
   },
@@ -149,34 +155,34 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       id: "svc-001",
       title: "Workshop Anyaman Bambu",
       description:
-        "Program pelatihan profesional tentang teknik anyaman bambu tradisional dan modern, cocok untuk individu, komunitas, sekolah, dan korporat.",
+        "Ikuti pelatihan anyaman bambu yang menggabungkan teknik tradisional dan pendekatan modern. Program ini dirancang untuk individu, komunitas, sekolah, hingga perusahaan.",
       icon: "🎋",
       features: [
         "Sesi teori & praktik langsung",
         "Materi dan alat disediakan",
         "Sertifikat keikutsertaan",
         "Bisa dilaksanakan on-site atau di workshop kami",
-        "Fleksibel: 3 jam hingga 2 hari",
+        "Durasi fleksibel mulai dari 3 jam hingga 2 hari",
       ],
     },
     {
       id: "svc-002",
       title: "Pengisi Workshop & Seminar",
       description:
-        "Ahmad Rahman tersedia sebagai pembicara dan instruktur untuk workshop, seminar industri kreatif, dan program pemberdayaan UMKM.",
+        "ArRahman siap hadir sebagai pembicara dan instruktur untuk workshop, seminar industri kreatif, dan program pemberdayaan UMKM.",
       icon: "🎤",
       features: [
-        "Topik: kerajinan bambu, UMKM, eco-crafting",
+        "Topik kerajinan bambu, UMKM dan eco-crafting",
         "Tersedia untuk acara pemerintah & swasta",
         "Pengalaman di berbagai institusi",
-        "Bahan presentasi profesional",
+        "Materi presentasi profesional",
         "Q&A interaktif",
       ],
     },
     {
       id: "svc-003",
       title: "Konsultasi Produk Custom",
-      description: "Layanan konsultasi untuk pengembangan produk anyaman bambu sesuai kebutuhan bisnis atau event Anda.",
+      description: "Dapatkan pendampingan dalam mengembangkan produk anyaman bambu yang sesuai dengan kebutuhan bisnis atau acara spesial Anda",
       icon: "💡",
       features: [
         "Desain produk custom",

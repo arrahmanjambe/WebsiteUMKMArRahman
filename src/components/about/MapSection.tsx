@@ -37,8 +37,8 @@ export default function MapSection() {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { label: "Alamat Lengkap", value: brand.location },
-            { label: "Hari Operasional", value: "Senin – Sabtu, 08.00 – 17.00 WIB" },
-            { label: "Kunjungan Workshop", value: "Hubungi kami untuk jadwal kunjungan" },
+            { label: "Hari Operasional", value: "Setiap Hari, 09.00 – 16.00 WIB" },
+            { label: "Kunjungan Workshop", value: "Hubungi kami untuk jadwal kunjungan lebih lanjut" },
           ].map(({ label, value }) => (
             <div
               key={label}

@@ -3,16 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Menu, X, ShoppingBag, Leaf } from "lucide-react";
+import { Menu, X, ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { cn } from "@/lib/utils";
-import ColorPaletteSelector from "./ColorPaletteSelector";
 
 const NAV_LINKS = [
   { href: "/", label: "Beranda" },
   { href: "/products", label: "Produk" },
   { href: "/about", label: "Tentang Kami" },
-  { href: "/kemitraan", label: "Kemitraan" },
+  // { href: "/kemitraan", label: "Kemitraan" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -36,31 +35,21 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-2 left-0 right-0 z-50 transition-all duration-300",
           scrolled
             ? "bg-[var(--color-surface)]/95 navbar-blur backdrop-blur-sm shadow-sm border-b border-[var(--color-surface-alt)]"
             : "bg-transparent"
         )}
       >
-        <nav className="max-w-7xl mx-auto px-5 md:px-10 flex items-center justify-between h-16 md:h-20">
+        <nav className="max-w-7xl mx-auto px-5 md:px-10 flex items-center justify-between h-18 md:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white transition-transform group-hover:scale-110">
-              <Leaf size={16} strokeWidth={2} />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span
-                className="font-display text-lg font-semibold tracking-tight"
-                style={{ color: "var(--color-text-main)" }}
-              >
-                AR Rahman
-              </span>
-              <span
-                className="text-[10px] font-body tracking-widest uppercase"
-                style={{ color: "var(--color-text-muted)" }}
-              >
-                Anyaman Bambu
-              </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-18 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white transition-transform group-hover:scale-110">
+              <img
+                src="https://res.cloudinary.com/dpctuucy8/image/upload/f_auto,q_auto/Logo_hos8wo"
+                alt="Logo AR Rahman"
+                className="w-full h-full object-cover"
+              />
             </div>
           </Link>
 
@@ -85,7 +74,6 @@ export default function Navbar() {
 
           {/* Right actions */}
           <div className="flex items-center gap-3">
-            <ColorPaletteSelector />
             <button
               onClick={toggleCart}
               className="relative w-9 h-9 rounded-full flex items-center justify-center hover:bg-[var(--color-surface-alt)] transition-colors"

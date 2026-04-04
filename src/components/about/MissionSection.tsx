@@ -6,7 +6,7 @@ export default function MissionSection() {
   return (
     <section className="section-padding" style={{ backgroundColor: "var(--color-surface-alt)" }}>
       <div className="max-w-7xl mx-auto px-5 md:px-10">
-        {/* Vision & Mission */}
+        {/* Vision & Mission
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           <div
             className="p-8 rounded-2xl border"
@@ -50,7 +50,7 @@ export default function MissionSection() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* Services / Jasa */}
         <div>

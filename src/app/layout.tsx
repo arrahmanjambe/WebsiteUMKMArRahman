@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { PaletteProvider } from "@/context/PaletteContext";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -84,14 +83,12 @@ export default function RootLayout({
         <meta name="theme-color" content="#4A7C59" />
       </head>
       <body className="grain-overlay">
-        <PaletteProvider>
-          <CartProvider>
-            <Navbar />
-            <CartSidebar />
-            <main>{children}</main>
-            <Footer />
-          </CartProvider>
-        </PaletteProvider>
+        <CartProvider>
+          <Navbar />
+          <CartSidebar />
+          <main>{children}</main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
