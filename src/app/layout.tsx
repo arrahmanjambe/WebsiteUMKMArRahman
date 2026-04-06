@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Anyaman Bambu AR Rahman",
   },
   description:
-    "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Topi pantai, peci, dan custom order. Ramah lingkungan, buatan tangan, ekspor global.",
+    "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Topi Lutfy, Koboy, Pedora dan Peci. Ramah lingkungan, buatan tangan.",
   keywords: [
     "anyaman bambu",
     "topi pantai bambu",
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     "kerajinan lokal",
     "ar rahman bambu",
     "bambu anyaman",
-    "custom order bambu",
     "UMKM Tangerang",
   ],
   openGraph: {

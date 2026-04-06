@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "FAQ — Anyaman Bambu AR Rahman",
   description:
-    "Temukan jawaban atas pertanyaan umum tentang produk anyaman bambu AR Rahman — pemesanan, pengiriman, perawatan, custom order, dan lebih banyak lagi.",
+    "Temukan jawaban atas pertanyaan umum tentang produk anyaman bambu AR Rahman — pemesanan, pengiriman dan banyak lagi.",
 };
 
 export default function FAQPage() {

@@ -5,15 +5,10 @@ import { Zap, Truck, Shield } from "lucide-react";
 export const metadata: Metadata = {
   title: "Produk — Anyaman Bambu AR Rahman",
   description:
-    "Temukan koleksi lengkap topi pantai dan peci anyaman bambu premium AR Rahman. Ready stock & custom order tersedia. Pengiriman ke seluruh Indonesia.",
+    "Temukan koleksi lengkap topi pantai dan peci anyaman bambu premium AR Rahman. Ready stock tersedia. Pengiriman ke seluruh Indonesia.",
 };
 
 const HIGHLIGHTS = [
-  {
-    icon: Zap,
-    title: "Custom Order",
-    desc: "Ukuran, warna, dan logo sesuai kebutuhan",
-  },
   {
     icon: Truck,
     title: "Pengiriman Cepat",
@@ -81,40 +76,6 @@ export default function ProductsPage() {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <ProductGrid />
-        </div>
-      </section>
-
-      {/* Custom Order CTA */}
-      <section className="pb-20">
-        <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <div
-            className="p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 border"
-            style={{
-              backgroundColor: "var(--color-surface-alt)",
-              borderColor: "var(--color-surface-alt)",
-            }}
-          >
-            <div>
-              <h3
-                className="font-display text-2xl md:text-3xl font-semibold mb-2"
-                style={{ color: "var(--color-text-main)" }}
-              >
-                Butuh Pesanan Custom?
-              </h3>
-              <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
-                Kami menerima custom ukuran, warna, logo branding, dan kebutuhan souvenir/hampers.
-              </p>
-            </div>
-            <a
-              href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20tanya%20tentang%20custom%20order%20anyaman%20bambu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 px-7 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-105 active:scale-95"
-              style={{ backgroundColor: "var(--color-primary)" }}
-            >
-              Diskusi Custom Order
-            </a>
-          </div>
         </div>
       </section>
     </div>

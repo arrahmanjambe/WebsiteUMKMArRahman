@@ -21,8 +21,7 @@ export default function CTASection() {
               Ada Pertanyaan atau Ingin Pesan?
             </h2>
             <p className="text-white/75 text-base leading-relaxed">
-              Tim kami siap membantu Anda menemukan produk yang tepat, mendiskusikan custom order,
-              atau informasi kemitraan.
+              Tim kami siap membantu Anda menemukan produk yang tepat atau informasi kemitraan.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
               <a

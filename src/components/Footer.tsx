@@ -17,7 +17,7 @@ const FOOTER_LINKS = [
     links: [
       { href: "/products?cat=topi", label: "Topi Pantai" },
       { href: "/products?cat=peci", label: "Peci" },
-      { href: "/products?cat=custom", label: "Custom Order" },
+      // { href: "/products?cat=custom", label: "Custom Order" },
       // { href: "/kemitraan", label: "Jadi Reseller" },
     ],
   },
@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="flex gap-3 mt-5">
               {[
                 { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arrahmanjambe_" },
-                { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
+                { icon: Youtube, label: "YouTube", href: "https://youtube.com/@ArRahmanJambe" },
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
@@ -117,16 +117,17 @@ export default function Footer() {
             {
               icon: MapPin,
               text: "Desa Ancol Pasir, Kec. Jambe, Tangerang, Banten",
+              href: "https://goo.gl/maps/your-location-link",
             },
             {
               icon: Phone,
-              text: "+62 812-3456-7890",
-              href: "https://wa.me/6281234567890",
+              text: "+62 895-4119-07532",
+              href: "https://wa.me/62895411907532",
             },
             {
               icon: Mail,
-              text: "hello@arrahman-bambu.id",
-              href: "mailto:hello@arrahman-bambu.id",
+              text: "arrahmanjambe@gmail.com",
+              href: "mailto:arrahmanjambe@gmail.com",
             },
           ].map(({ icon: Icon, text, href }) => (
             <div key={text} className="flex items-start gap-2.5">

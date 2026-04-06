@@ -162,10 +162,10 @@ export default function HeroSection() {
               ))}
             </div>
             <p className="text-xs leading-snug" style={{ color: "var(--color-text-muted)" }}>
-              "Kualitas luar biasa, pengiriman cepat!"
+              "Kualitas topinya oke, unik dan bagus dari segi jahitan dan anyamannya. Saat dipakai topinya juga adem dan bentuk masih terjaga setelah pemakain beberapa kali"
             </p>
             <p className="text-[10px] mt-1 font-medium" style={{ color: "var(--color-text-main)" }}>
-              — Pelanggan Setia
+              — Teh Selpi
             </p>
           </div>
         </div>
@@ -187,10 +187,8 @@ export default function HeroSection() {
               {[
                 "🎋 Anyaman Tradisional",
                 "🌿 100% Ramah Lingkungan",
-                "✈️ Ekspor ke 5 Negara",
                 "🏆 UNESCO Creative Cities Featured",
                 "🎓 Workshop & Pelatihan",
-                "✂️ Custom Order Tersedia",
               ].map((item) => (
                 <span
                   key={item}
