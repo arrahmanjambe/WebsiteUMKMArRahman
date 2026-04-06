@@ -14,7 +14,7 @@ export default function ProductCard({ product }: Props) {
   const { addItem, openCart } = useCart();
 
   const handleAdd = () => {
-    addItem(product);
+    addItem(product, 1);
     openCart();
   };
 
@@ -119,7 +119,11 @@ export default function ProductCard({ product }: Props) {
             )}
           </div>
           <button
-            onClick={handleAdd}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleAdd();
+            }}
             disabled={!product.inStock}
             className="w-11 h-11 rounded-full flex items-center justify-center text-white transition-[transform,opacity] hover:scale-110 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
             style={{ backgroundColor: "var(--color-primary)" }}
