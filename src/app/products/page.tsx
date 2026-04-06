@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProductGrid from "@/components/products/ProductGrid";
 import { Zap, Truck, Shield } from "lucide-react";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Produk — Anyaman Bambu AR Rahman Jambe",
@@ -75,7 +76,9 @@ export default function ProductsPage() {
       {/* Products */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <ProductGrid />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ProductGrid />
+          </Suspense>
         </div>
       </section>
     </div>
