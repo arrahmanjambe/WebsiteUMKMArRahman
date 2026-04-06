@@ -117,7 +117,7 @@ export default function Footer() {
             {
               icon: MapPin,
               text: "Desa Ancol Pasir, Kec. Jambe, Tangerang, Banten",
-              href: "https://goo.gl/maps/your-location-link",
+              href: "https://maps.app.goo.gl/s1DmWjy3WiCBsctSA",
             },
             {
               icon: Phone,
