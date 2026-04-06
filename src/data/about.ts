@@ -1,12 +1,12 @@
 export const ABOUT_DATA = {
   brand: {
-    name: "Anyaman Bambu AR Rahman",
+    name: "Anyaman Bambu AR Rahman Jambe",
     tagline: "Dari Tangan Pengrajin Lokal, Untuk Dunia",
     established: "2018",
     location: "MGM5+24R, Ancol Pasir, Kec. Jambe, Kabupaten Tangerang, Banten 15720, Indonesia",
     coordinates: { lat: -6.3174472, lng: 106.5077027 },
     description:
-      "Anyaman Bambu AR-Rahman lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
+      "Anyaman Bambu AR-Rahman Jambe lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
     vision:
       "Menjadi produsen anyaman bambu terkemuka yang mengangkat budaya lokal ke pasar internasional sambil menjaga kelestarian lingkungan dan kesejahteraan pengrajin.",
     mission: [
@@ -26,7 +26,7 @@ export const ABOUT_DATA = {
     image: "https://res.cloudinary.com/dpctuucy8/image/upload/f_auto,q_auto/Logo_1_de5iqu",
     bio: `Ahmad Rahman tumbuh besar di tengah keluarga pengrajin bambu di Tangerang. Sejak usia 12 tahun, ia telah belajar menganyam dari sang kakek yang merupakan pengrajin topi pantai terkemuka di daerahnya.
 
-Setelah menyelesaikan pendidikan di SMK Kerajinan, Ahmad memutuskan untuk tidak sekadar meneruskan tradisi keluarga, melainkan mengangkatnya ke level berikutnya. Pada 2018, ia mendirikan Anyaman Bambu AR Rahman dengan tekad untuk membuktikan bahwa produk lokal Indonesia mampu bersaing di pasar internasional.
+Setelah menyelesaikan pendidikan di SMK Kerajinan, Ahmad memutuskan untuk tidak sekadar meneruskan tradisi keluarga, melainkan mengangkatnya ke level berikutnya. Pada 2018, ia mendirikan Anyaman Bambu AR Rahman Jambe dengan tekad untuk membuktikan bahwa produk lokal Indonesia mampu bersaing di pasar internasional.
 
 Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai educator yang aktif berbagi ilmu di berbagai workshop dan program pemberdayaan masyarakat.`,
     expertise: ["Teknik Anyaman Tradisional", "Product Design", "Quality Control", "Workshop Facilitation"],
@@ -88,53 +88,53 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       participants: 45,
       description: "Program pelatihan anyaman bambu untuk pemuda desa sebagai bekal wirausaha.",
     },
-    {
-      id: "ws-002",
-      title: "Pelatih di Inkubator UMKM Jawa Barat",
-      organizer: "Dinas Perindustrian Jawa Barat",
-      location: "Bandung, Jawa Barat",
-      year: "2022",
-      participants: 30,
-      description: "Menjadi narasumber di program inkubasi UMKM kerajinan Jawa Barat.",
-    },
-    {
-      id: "ws-003",
-      title: "Master Class Anyaman Bambu",
-      organizer: "Institut Teknologi Bandung (ITB)",
-      location: "Bandung, Jawa Barat",
-      year: "2022",
-      participants: 25,
-      description: "Workshop eksklusif untuk mahasiswa Desain Produk ITB tentang material bambu.",
-    },
-    {
-      id: "ws-004",
-      title: "Workshop Eco-Craft untuk Ibu PKK",
-      organizer: "PKK Kecamatan Ciawi",
-      location: "Tangerang, Jawa Barat",
-      year: "2023",
-      participants: 60,
-      description: "Memberdayakan ibu-ibu PKK dengan keterampilan anyaman sebagai tambahan penghasilan.",
-    },
-    {
-      id: "ws-005",
-      title: "Cultural Exchange Workshop",
-      organizer: "Kedutaan Besar Belanda",
-      location: "Jakarta",
-      year: "2023",
-      participants: 20,
-      description: "Workshop budaya anyaman Indonesia untuk delegasi Belanda dalam program pertukaran budaya.",
-    },
+    // {
+    //   id: "ws-002",
+    //   title: "Pelatih di Inkubator UMKM Jawa Barat",
+    //   organizer: "Dinas Perindustrian Jawa Barat",
+    //   location: "Bandung, Jawa Barat",
+    //   year: "2022",
+    //   participants: 30,
+    //   description: "Menjadi narasumber di program inkubasi UMKM kerajinan Jawa Barat.",
+    // },
+    // {
+    //   id: "ws-003",
+    //   title: "Master Class Anyaman Bambu",
+    //   organizer: "Institut Teknologi Bandung (ITB)",
+    //   location: "Bandung, Jawa Barat",
+    //   year: "2022",
+    //   participants: 25,
+    //   description: "Workshop eksklusif untuk mahasiswa Desain Produk ITB tentang material bambu.",
+    // },
+    // {
+    //   id: "ws-004",
+    //   title: "Workshop Eco-Craft untuk Ibu PKK",
+    //   organizer: "PKK Kecamatan Ciawi",
+    //   location: "Tangerang, Jawa Barat",
+    //   year: "2023",
+    //   participants: 60,
+    //   description: "Memberdayakan ibu-ibu PKK dengan keterampilan anyaman sebagai tambahan penghasilan.",
+    // },
+    // {
+    //   id: "ws-005",
+    //   title: "Cultural Exchange Workshop",
+    //   organizer: "Kedutaan Besar Belanda",
+    //   location: "Jakarta",
+    //   year: "2023",
+    //   participants: 20,
+    //   description: "Workshop budaya anyaman Indonesia untuk delegasi Belanda dalam program pertukaran budaya.",
+    // },
   ],
 
   unesco: {
     title: "Diakui Dunia: UNESCO Creative Cities",
     subtitle: "Menarik Perhatian Dunia",
     description:
-      "Pada 2023, delegasi dari UNESCO Creative Cities Network mengunjungi Tangerang dan menjadikan AR Rahman sebagai salah satu showcas utama kerajinan lokal. Kunjungan ini menjadi pengakuan internasional bahwa tradisi anyaman bambu Tangerang layak mendapat perhatian dunia.",
+      "Pada 2023, delegasi dari UNESCO Creative Cities Network mengunjungi Tangerang dan menjadikan AR Rahman Jambe sebagai salah satu showcas utama kerajinan lokal. Kunjungan ini menjadi pengakuan internasional bahwa tradisi anyaman bambu Tangerang layak mendapat perhatian dunia.",
     highlights: [
       "Dikunjungi delegasi dari 8 negara anggota UNESCO Creative Cities",
       "Dipresentasikan sebagai model UMKM berkelanjutan berbasis kearifan lokal",
-      "Produk AR Rahman masuk rekomendasi artisan Indonesia untuk jaringan UNESCO",
+      "Produk AR Rahman Jambe masuk rekomendasi artisan Indonesia untuk jaringan UNESCO",
       "Mendorong diskusi tentang perlindungan warisan budaya kerajinan bambu",
     ],
     year: "2023",
@@ -151,20 +151,20 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
   ],
 
   services: [
-    {
-      id: "svc-001",
-      title: "Workshop Anyaman Bambu",
-      description:
-        "Ikuti pelatihan anyaman bambu yang menggabungkan teknik tradisional dan pendekatan modern. Program ini dirancang untuk individu, komunitas, sekolah, hingga perusahaan.",
-      icon: "🎋",
-      features: [
-        "Sesi teori & praktik langsung",
-        "Materi dan alat disediakan",
-        "Sertifikat keikutsertaan",
-        "Bisa dilaksanakan on-site atau di workshop kami",
-        "Durasi fleksibel mulai dari 3 jam hingga 2 hari",
-      ],
-    },
+    // {
+    //   id: "svc-001",
+    //   title: "Workshop Anyaman Bambu",
+    //   description:
+    //     "Ikuti pelatihan anyaman bambu yang menggabungkan teknik tradisional dan pendekatan modern. Program ini dirancang untuk individu, komunitas, sekolah, hingga perusahaan.",
+    //   icon: "🎋",
+    //   features: [
+    //     "Sesi teori & praktik langsung",
+    //     "Materi dan alat disediakan",
+    //     "Sertifikat keikutsertaan",
+    //     "Bisa dilaksanakan on-site atau di workshop kami",
+    //     "Durasi fleksibel mulai dari 3 jam hingga 2 hari",
+    //   ],
+    // },
     {
       id: "svc-002",
       title: "Pengisi Workshop & Seminar",

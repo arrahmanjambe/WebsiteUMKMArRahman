@@ -95,7 +95,7 @@ export const MITRA_LIST: Mitra[] = [
     description: "Toko kerajinan tangan premium yang telah bermitra sejak 2021.",
     since: "2021",
     testimonial:
-      "Produk AR Rahman selalu jadi favorit pelanggan kami. Kualitasnya konsisten dan packaging-nya sangat menarik.",
+      "Produk AR Rahman Jambe selalu jadi favorit pelanggan kami. Kualitasnya konsisten dan packaging-nya sangat menarik.",
   },
   {
     id: "mitra-002",
@@ -105,7 +105,7 @@ export const MITRA_LIST: Mitra[] = [
     description: "Distributor produk kerajinan lokal untuk pasar wisatawan mancanegara di Bali.",
     since: "2020",
     testimonial:
-      "Topi pantai AR Rahman sangat diminati wisatawan. Kami bangga bisa memperkenalkan produk lokal berkualitas ke dunia.",
+      "Topi pantai AR Rahman Jambe sangat diminati wisatawan. Kami bangga bisa memperkenalkan produk lokal berkualitas ke dunia.",
   },
   {
     id: "mitra-003",
@@ -114,7 +114,7 @@ export const MITRA_LIST: Mitra[] = [
     location: "Surabaya",
     description: "Perusahaan yang menjadikan produk kami sebagai souvenir korporat ramah lingkungan.",
     since: "2022",
-    testimonial: "Souvenir custom AR Rahman menjadi buah bibir di setiap event kami. Sangat profesional dalam pelayanan.",
+    testimonial: "Souvenir custom AR Rahman Jambe menjadi buah bibir di setiap event kami. Sangat profesional dalam pelayanan.",
   },
   {
     id: "mitra-004",
@@ -132,7 +132,7 @@ export const MITRA_LIST: Mitra[] = [
     description: "Importir produk bambu Indonesia untuk pasar Australia dan Selandia Baru.",
     since: "2023",
     testimonial:
-      "AR Rahman is one of the most reliable bamboo craft producers from Indonesia. Quality and delivery are always on point.",
+      "AR Rahman Jambe is one of the most reliable bamboo craft producers from Indonesia. Quality and delivery are always on point.",
   },
   {
     id: "mitra-006",

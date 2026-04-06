@@ -6,9 +6,9 @@ import AchievementsSection from "@/components/home/AchievementsSection";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Beranda — Anyaman Bambu AR Rahman",
+  title: "Beranda — Anyaman Bambu AR Rahman Jambe",
   description:
-    "Anyaman Bambu AR Rahman — kerajinan topi pantai dan peci bambu premium dari Tangerang. Ramah lingkungan, buatan tangan.",
+    "Anyaman Bambu AR Rahman Jambe — kerajinan topi pantai dan peci bambu premium dari Tangerang. Ramah lingkungan, buatan tangan.",
 };
 
 export default function HomePage() {

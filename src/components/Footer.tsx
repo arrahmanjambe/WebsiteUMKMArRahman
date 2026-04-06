@@ -3,7 +3,7 @@ import { Leaf, MapPin, Phone, Mail, Instagram, Youtube } from "lucide-react";
 
 const FOOTER_LINKS = [
   {
-    title: "Navigasi",
+    title: "Menu",
     links: [
       { href: "/", label: "Beranda" },
       { href: "/products", label: "Produk" },
@@ -36,16 +36,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-4 group w-fit">
-              <div
-                className="w-8 h-8 rounded-full flex items-center justify-center text-white"
-                style={{ backgroundColor: "var(--color-primary)" }}
-              >
-                <Leaf size={16} />
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="w-18 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white transition-transform group-hover:scale-110">
+                <img
+                  src="https://res.cloudinary.com/dpctuucy8/image/upload/f_auto,q_auto/Logo_hos8wo"
+                  alt="Logo AR Rahman Jambe"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <p className="font-display text-lg font-semibold" style={{ color: "var(--color-text-main)" }}>
-                  AR Rahman
+                  AR Rahman Jambe
                 </p>
                 <p
                   className="text-[10px] tracking-widest uppercase"
@@ -55,14 +56,13 @@ export default function Footer() {
                 </p>
               </div>
             </Link>
-            <p className="text-sm leading-relaxed max-w-xs" style={{ color: "var(--color-text-muted)" }}>
-              Kerajinan anyaman bambu tradisional dari Tangerang, Jawa Barat. Dibuat dengan tangan oleh
-              pengrajin lokal, untuk dunia.
-            </p>
             <div className="flex gap-3 mt-5">
               {[
                 { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arrahmanjambe_" },
                 { icon: Youtube, label: "YouTube", href: "https://youtube.com/@ArRahmanJambe" },
+                { icon: MapPin, label: "Lokasi", href: "https://maps.app.goo.gl/s1DmWjy3WiCBsctSA" },
+                { icon: Phone, label: "WhatsApp", href: "https://wa.me/62895411907532" },
+                { icon: Mail, label: "Email", href: "mailto:arrahmanjambe@gmail.com" }
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
@@ -108,54 +108,13 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Contact info */}
-        <div
-          className="mt-12 pt-8 border-t grid grid-cols-1 sm:grid-cols-3 gap-4"
-          style={{ borderColor: "var(--color-surface-alt)" }}
-        >
-          {[
-            {
-              icon: MapPin,
-              text: "Desa Ancol Pasir, Kec. Jambe, Tangerang, Banten",
-              href: "https://maps.app.goo.gl/s1DmWjy3WiCBsctSA",
-            },
-            {
-              icon: Phone,
-              text: "+62 895-4119-07532",
-              href: "https://wa.me/62895411907532",
-            },
-            {
-              icon: Mail,
-              text: "arrahmanjambe@gmail.com",
-              href: "mailto:arrahmanjambe@gmail.com",
-            },
-          ].map(({ icon: Icon, text, href }) => (
-            <div key={text} className="flex items-start gap-2.5">
-              <Icon size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-primary)" }} />
-              {href ? (
-                <a
-                  href={href}
-                  className="text-xs leading-relaxed hover:text-[var(--color-primary)] transition-colors"
-                  style={{ color: "var(--color-text-muted)" }}
-                >
-                  {text}
-                </a>
-              ) : (
-                <p className="text-xs leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
-                  {text}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-
         {/* Bottom */}
         <div
           className="mt-8 pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-2"
           style={{ borderColor: "var(--color-surface-alt)" }}
         >
           <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
-            © {new Date().getFullYear()} Anyaman Bambu AR Rahman. Hak cipta dilindungi.
+            © {new Date().getFullYear()} Anyaman Bambu AR Rahman Jambe. Hak cipta dilindungi.
           </p>
           <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
             Dibuat bersama dengan Universitas Prasetiya Mulya

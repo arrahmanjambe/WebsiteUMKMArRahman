@@ -8,19 +8,27 @@ import CartSidebar from "@/components/CartSidebar";
 export const metadata: Metadata = {
   metadataBase: new URL("https://arrahman-bambu.id"),
   title: {
-    default: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tangerang",
-    template: "%s | Anyaman Bambu AR Rahman",
+    default: "Anyaman Bambu AR Rahman Jambe — Kerajinan Bambu Premium Tangerang",
+    template: "%s | Anyaman Bambu AR Rahman Jambe",
   },
   description:
     "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Topi Lutfy, Koboy, Pedora dan Peci. Ramah lingkungan, buatan tangan.",
   keywords: [
     "anyaman bambu",
+    "desa jambe",
+    "tangerang",
+    "jambe",
+    "ancol pasir",
+    "topi bambu",
+    "koboy bambu",
+    "pedora bambu",
+    "lutfy bambu",
     "topi pantai bambu",
     "peci bambu",
     "kerajinan Tangerang",
     "souvenir bambu",
     "kerajinan lokal",
-    "ar rahman bambu",
+    "ar rahman jambe bambu",
     "bambu anyaman",
     "UMKM Tangerang",
   ],
@@ -28,8 +36,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://arrahman-bambu.id",
-    siteName: "Anyaman Bambu AR Rahman",
-    title: "Anyaman Bambu AR Rahman — Kerajinan Bambu Premium Tangerang",
+    siteName: "Anyaman Bambu AR Rahman Jambe",
+    title: "Anyaman Bambu AR Rahman Jambe — Kerajinan Bambu Premium Tangerang",
     description:
       "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Ramah lingkungan, buatan tangan, ekspor global.",
     images: [
@@ -37,13 +45,13 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Anyaman Bambu AR Rahman",
+        alt: "Anyaman Bambu AR Rahman Jambe",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anyaman Bambu AR Rahman",
+    title: "Anyaman Bambu AR Rahman Jambe",
     description: "Kerajinan anyaman bambu tradisional premium dari Tangerang.",
   },
   robots: {

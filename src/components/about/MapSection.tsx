@@ -23,7 +23,7 @@ export default function MapSection() {
 
         <div className="rounded-2xl overflow-hidden border" style={{ borderColor: "var(--color-surface-alt)" }}>
           <iframe
-            title="Lokasi Anyaman Bambu AR Rahman"
+            title="Lokasi Anyaman Bambu AR Rahman Jambe"
             width="100%"
             height="420"
             style={{ border: 0, display: "block" }}

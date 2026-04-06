@@ -4,9 +4,9 @@ import MitraCard from "@/components/kemitraan/MitraCard";
 import { MITRA_LIST } from "@/data/mitra";
 
 export const metadata: Metadata = {
-  title: "Kemitraan — Anyaman Bambu AR Rahman",
+  title: "Kemitraan — Anyaman Bambu AR Rahman Jambe",
   description:
-    "Bergabunglah sebagai mitra reseller, distributor, atau korporat Anyaman Bambu AR Rahman. Dapatkan harga khusus dan dukungan pemasaran penuh.",
+    "Bergabunglah sebagai mitra reseller, distributor, atau korporat Anyaman Bambu AR Rahman Jambe. Dapatkan harga khusus dan dukungan pemasaran penuh.",
 };
 
 export default function KemitraanPage() {
@@ -40,11 +40,11 @@ export default function KemitraanPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "var(--color-text-muted)" }}
           >
-            Bergabung dalam jaringan mitra AR Rahman dan dapatkan keuntungan eksklusif dari produk
+            Bergabung dalam jaringan mitra AR Rahman Jambe dan dapatkan keuntungan eksklusif dari produk
             anyaman bambu premium yang dicintai pelanggan di seluruh Indonesia hingga mancanegara.
           </p>
           <a
-            href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20menjadi%20mitra%20Anyaman%20Bambu%20AR%20Rahman"
+            href="https://wa.me/62895411907532?text=Halo,%20saya%20tertarik%20menjadi%20mitra%20Anyaman%20Bambu%20AR%20Rahman%20Jambe"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-105"
@@ -104,7 +104,7 @@ export default function KemitraanPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/62895411907532"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-105"

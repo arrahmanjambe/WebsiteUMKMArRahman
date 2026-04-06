@@ -47,10 +47,21 @@ export default function Navbar() {
             <div className="w-18 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white transition-transform group-hover:scale-110">
               <img
                 src="https://res.cloudinary.com/dpctuucy8/image/upload/f_auto,q_auto/Logo_hos8wo"
-                alt="Logo AR Rahman"
+                alt="Logo AR Rahman Jambe"
                 className="w-full h-full object-cover"
               />
             </div>
+            <div>
+                <p className="font-display text-lg font-semibold" style={{ color: "var(--color-text-main)" }}>
+                  AR Rahman Jambe
+                </p>
+                <p
+                  className="text-[10px] tracking-widest uppercase"
+                  style={{ color: "var(--color-text-muted)" }}
+                >
+                  Anyaman Bambu
+                </p>
+              </div>
           </Link>
 
           {/* Desktop nav */}

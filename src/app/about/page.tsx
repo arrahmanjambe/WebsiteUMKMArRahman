@@ -9,9 +9,9 @@ import MapSection from "@/components/about/MapSection";
 import StatsSection from "@/components/home/StatsSection";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami — Anyaman Bambu AR Rahman",
+  title: "Tentang Kami — Anyaman Bambu AR Rahman Jambe",
   description:
-    "Cerita di balik Anyaman Bambu AR Rahman — dari tradisi keluarga Tangerang, perjalanan pendiri Ahmad Rahman, hingga pengakuan UNESCO Creative Cities Network.",
+    "Cerita di balik Anyaman Bambu AR Rahman Jambe — dari tradisi keluarga Tangerang, perjalanan pendiri Ahmad Rahman, hingga pengakuan UNESCO Creative Cities Network.",
 };
 
 export default function AboutPage() {
