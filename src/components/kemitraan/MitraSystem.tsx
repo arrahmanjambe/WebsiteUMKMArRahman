@@ -77,7 +77,7 @@ export default function MitraSystem() {
                 </p>
               )}
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/62895411907532"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 block text-center py-2.5 rounded-xl text-sm font-semibold transition-all hover:opacity-90 active:scale-[0.98]"

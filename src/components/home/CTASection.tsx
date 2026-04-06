@@ -25,7 +25,7 @@ export default function CTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/62895411907532"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full text-sm font-semibold bg-white transition-all hover:bg-white/90 hover:scale-105 active:scale-95"

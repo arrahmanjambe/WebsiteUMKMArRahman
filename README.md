@@ -116,7 +116,7 @@ vercel --prod
 ### Setelah Deploy
 1. Ganti `metadataBase` di `src/app/layout.tsx` dengan URL Vercel Anda
 2. Ganti URL di `src/app/sitemap.ts` dan `robots.ts`
-3. Ganti nomor WhatsApp `6281234567890` di semua file
+3. Ganti nomor WhatsApp `62895411907532` di semua file
 4. Ganti email `hello@arrahman-bambu.id` di footer
 
 ---
@@ -126,7 +126,7 @@ vercel --prod
 Buat file `.env.local` jika diperlukan:
 
 ```env
-NEXT_PUBLIC_WHATSAPP=6281234567890
+NEXT_PUBLIC_WHATSAPP=62895411907532
 NEXT_PUBLIC_EMAIL=hello@arrahman-bambu.id
 NEXT_PUBLIC_SITE_URL=https://arrahman-bambu.id
 ```
@@ -152,4 +152,4 @@ NEXT_PUBLIC_SITE_URL=https://arrahman-bambu.id
 ## 📞 Kontak
 
 Untuk pertanyaan teknis website, hubungi pengembang.
-Untuk pertanyaan produk: [WhatsApp AR Rahman](https://wa.me/6281234567890)
+Untuk pertanyaan produk: [WhatsApp AR Rahman](https://wa.me/62895411907532)
