@@ -62,23 +62,23 @@ export default function MissionSection() {
               Jasa & Layanan
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-10">
             {services.map((svc) => (
               <div
                 key={svc.id}
                 className="p-7 rounded-2xl border group hover:-translate-y-1 transition-transform"
                 style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-surface-alt)" }}
               >
-                <div className="text-3xl mb-4">{svc.icon}</div>
-                <h3 className="font-display text-xl font-semibold mb-2" style={{ color: "var(--color-text-main)" }}>
+                <div className="text-2xl mb-4">{svc.icon}</div>
+                <h3 className="font-display text-2xl font-semibold mb-2" style={{ color: "var(--color-text-main)" }}>
                   {svc.title}
                 </h3>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--color-text-muted)" }}>
+                <p className="text-xl leading-relaxed mb-4" style={{ color: "var(--color-text-muted)" }}>
                   {svc.description}
                 </p>
                 <ul className="space-y-1.5">
                   {svc.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-xs" style={{ color: "var(--color-text-muted)" }}>
+                    <li key={f} className="flex items-center gap-2 text-sm" style={{ color: "var(--color-text-muted)" }}>
                       <span style={{ color: "var(--color-primary)" }}>✓</span>
                       {f}
                     </li>

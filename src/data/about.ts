@@ -29,7 +29,7 @@ export const ABOUT_DATA = {
 Setelah menyelesaikan pendidikan di SMK Kerajinan, Ahmad memutuskan untuk tidak sekadar meneruskan tradisi keluarga, melainkan mengangkatnya ke level berikutnya. Pada 2018, ia mendirikan Anyaman Bambu AR Rahman Jambe dengan tekad untuk membuktikan bahwa produk lokal Indonesia mampu bersaing di pasar internasional.
 
 Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai educator yang aktif berbagi ilmu di berbagai workshop dan program pemberdayaan masyarakat.`,
-    expertise: ["Teknik Anyaman Tradisional", "Product Design", "Quality Control", "Workshop Facilitation"],
+    expertise: ["Teknik Anyaman Tradisional", "Public Speaking", "Workshop Facilitation"],
     quote:
       "Setiap helai bambu yang dianyam membawa cerita — cerita tentang tanah, tangan, dan tradisi yang harus kita jaga dan teruskan.",
   },
