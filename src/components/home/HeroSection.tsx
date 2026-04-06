@@ -117,7 +117,7 @@ export default function HeroSection() {
           {/* Main image */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?w=800&q=80"
+              src="https://res.cloudinary.com/dpctuucy8/image/upload/v1775456094/Pedora_1_ubw3hu.png"
               alt="Topi anyaman bambu premium AR Rahman"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
