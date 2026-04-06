@@ -42,7 +42,7 @@ export default function ProductsPage() {
             </h1>
             <p className="text-base leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
               Setiap produk dibuat dengan tangan oleh pengrajin lokal Tangerang. Pilih dari koleksi ready
-              stock atau pesan custom sesuai kebutuhan Anda.
+              stock sesuai kebutuhan Anda.
             </p>
           </div>
 

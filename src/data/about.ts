@@ -179,18 +179,18 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
         "Q&A interaktif",
       ],
     },
-    {
-      id: "svc-003",
-      title: "Konsultasi Produk Custom",
-      description: "Dapatkan pendampingan dalam mengembangkan produk anyaman bambu yang sesuai dengan kebutuhan bisnis atau acara spesial Anda",
-      icon: "💡",
-      features: [
-        "Desain produk custom",
-        "Sampling & prototype",
-        "Harga korporat",
-        "Packaging custom",
-        "Fast response",
-      ],
-    },
+    // {
+    //   id: "svc-003",
+    //   title: "Konsultasi Produk Custom",
+    //   description: "Dapatkan pendampingan dalam mengembangkan produk anyaman bambu yang sesuai dengan kebutuhan bisnis atau acara spesial Anda",
+    //   icon: "💡",
+    //   features: [
+    //     "Desain produk custom",
+    //     "Sampling & prototype",
+    //     "Harga korporat",
+    //     "Packaging custom",
+    //     "Fast response",
+    //   ],
+    // },
   ],
 };

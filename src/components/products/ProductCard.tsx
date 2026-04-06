@@ -53,7 +53,7 @@ export default function ProductCard({ product }: Props) {
             </span>
           </div>
         )}
-        {product.isCustomizable && (
+        {/* {product.isCustomizable && (
           <div
             className="absolute top-3 right-3 w-7 h-7 rounded-full flex items-center justify-center"
             style={{ backgroundColor: "var(--color-tertiary)" }}
@@ -61,7 +61,7 @@ export default function ProductCard({ product }: Props) {
           >
             <Zap size={12} className="text-white" />
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Content */}

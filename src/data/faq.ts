@@ -40,7 +40,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     category: "pemesanan",
     question: "Apakah produk bisa custom sesuai permintaan?",
     answer:
-      "Ya, kami menerima pesanan custom untuk:\n• Ukuran tertentu\n• Warna khusus\n• Logo branding\n• Kebutuhan hampers atau souvenir acara\n\nSilakan hubungi kami melalui halaman Kontak untuk diskusi lebih lanjut dan dapatkan penawaran terbaik sesuai kebutuhan Anda.",
+      "Tidak, kami tidak menerima pesanan custom untuk:\n• Ukuran tertentu\n• Warna khusus\n• Logo branding\n• Kebutuhan hampers atau souvenir acara\n\nSilakan hubungi kami melalui halaman Kontak untuk diskusi lebih lanjut dan dapatkan penawaran terbaik sesuai kebutuhan Anda.",
   },
   {
     id: "faq-004",
@@ -54,14 +54,14 @@ export const FAQ_ITEMS: FAQItem[] = [
     category: "pemesanan",
     question: "Bagaimana cara pemesanan?",
     answer:
-      "Pemesanan dapat dilakukan melalui:\n• Form pemesanan di website (halaman Products)\n• WhatsApp yang tertera di halaman kontak\n• Marketplace resmi kami (Tokopedia & Shopee)\n\nUntuk pesanan custom atau dalam jumlah besar, kami menyarankan untuk menghubungi langsung agar kami dapat memberikan penawaran terbaik.",
+      "Pemesanan dapat dilakukan melalui:\n• Form pemesanan di website (halaman Products)\n• WhatsApp yang tertera di halaman kontak",
   },
   {
     id: "faq-006",
     category: "pemesanan",
     question: "Berapa lama proses produksi?",
     answer:
-      "Estimasi waktu produksi:\n• Produk ready stock: 1–3 hari kerja\n• Custom atau pemesanan dalam jumlah besar: 5–14 hari kerja tergantung jumlah dan tingkat kesulitan\n\nKami akan memberikan konfirmasi waktu pengerjaan yang lebih akurat setelah diskusi detail pesanan Anda.",
+      "Estimasi waktu produksi:\n• Produk ready stock: 1–3 hari kerja\n\nKami akan memberikan konfirmasi waktu pengerjaan yang lebih akurat setelah diskusi detail pesanan Anda.",
   },
   {
     id: "faq-007",
