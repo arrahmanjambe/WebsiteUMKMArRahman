@@ -26,32 +26,34 @@ type Props = { product: Product };
 export default function ProductDetailClient({ product }: Props) {
   const { addItem, openCart } = useCart();
   const [activeImage, setActiveImage] = useState(0);
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);
-  const [sizeError, setSizeError] = useState(false);
   const [activeTab, setActiveTab] = useState<"deskripsi" | "spesifikasi">("deskripsi");
   const [copied, setCopied] = useState(false);
 
   const related = getRelatedProducts(product);
 
   const handleAddToCart = () => {
-    if (product.sizes.length > 0 && !selectedSize) {
-      setSizeError(true);
-      document.getElementById("size-selector")?.scrollIntoView({ behavior: "smooth", block: "center" });
-      return;
-    }
-    addItem(product);
+    addItem(product, quantity);
     openCart();
   };
 
   const handleBuyNow = () => {
-    if (product.sizes.length > 0 && !selectedSize) {
-      setSizeError(true);
-      document.getElementById("size-selector")?.scrollIntoView({ behavior: "smooth", block: "center" });
-      return;
-    }
-    const msg = `Halo, saya ingin memesan:\n\n• ${product.name}${selectedSize ? ` (Ukuran ${selectedSize})` : ""} × ${quantity}\n  = ${formatPrice(product.price * quantity)}\n\nMohon konfirmasi ketersediaan stok. Terima kasih!`;
-    window.open(waLink(msg), "_blank");
+    const total = product.price * quantity;
+    const message = `
+  Halo, saya ingin memesan produk berikut:
+
+  🛍️ *${product.name}*
+  📦 Jumlah: ${quantity}
+  💰 Harga: ${formatPrice(product.price)}
+  🧾 Total: ${formatPrice(total)}
+
+  Link produk:
+  ${window.location.href}
+
+  Mohon info ketersediaan ya, terima kasih 🙏
+    `;
+
+    window.open(waLink(message), "_blank");
   };
 
   const handleShare = () => {
@@ -226,46 +228,6 @@ export default function ProductDetailClient({ product }: Props) {
               ))}
             </div>
 
-            {/* Size selector */}
-            {/* {product.sizes.length > 0 && (
-              <div id="size-selector">
-                <div className="flex items-center justify-between mb-2.5">
-                  <p className="text-sm font-semibold" style={{ color: "var(--color-text-main)" }}>
-                    Pilih Ukuran
-                  </p>
-                  {sizeError && !selectedSize && (
-                    <p className="text-xs text-red-500 font-medium">Pilih ukuran terlebih dahulu</p>
-                  )}
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {product.sizes.map((size) => (
-                    <button
-                      key={size.label}
-                      onClick={() => { setSelectedSize(size.label); setSizeError(false); }}
-                      className={cn(
-                        "relative flex flex-col items-center px-4 py-2.5 rounded-xl border-2 text-sm font-medium transition-all",
-                        selectedSize === size.label
-                          ? "border-[#4A7C59] bg-[#4A7C59]/5 text-[#4A7C59]"
-                          : sizeError && !selectedSize
-                          ? "border-red-300 text-[#1C1C1C] hover:border-[#4A7C59]"
-                          : "border-[#F0EBE0] text-[#1C1C1C] hover:border-[#4A7C59]"
-                      )}
-                    >
-                      <span className="font-bold">{size.label}</span>
-                      {size.description && (
-                        <span className="text-[10px] mt-0.5 font-normal opacity-70">{size.description}</span>
-                      )}
-                      {selectedSize === size.label && (
-                        <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-[#4A7C59] rounded-full flex items-center justify-center">
-                          <Check size={9} className="text-white" />
-                        </span>
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )} */}
-
             {/* Quantity */}
             <div className="flex items-center gap-4">
               <p className="text-sm font-semibold" style={{ color: "var(--color-text-main)" }}>
@@ -333,13 +295,6 @@ export default function ProductDetailClient({ product }: Props) {
               </button>
             </div>
 
-            {/* Min order note */}
-            {product.minOrder > 1 && (
-              <p className="text-xs text-center" style={{ color: "var(--color-text-muted)" }}>
-                Minimal pembelian {product.minOrder} pcs
-              </p>
-            )}
-
             {/* Shop card */}
             <div
               className="flex items-center justify-between p-4 rounded-xl border mt-1"
@@ -362,7 +317,7 @@ export default function ProductDetailClient({ product }: Props) {
                 </div>
               </div>
               <a
-                href={waLink("Halo, saya ingin tanya tentang produk Anda.")}
+                href={waLink(`Halo, saya ingin tanya tentang produk Anda yaitu ${product.name}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors hover:bg-[#4A7C59] hover:text-white hover:border-[#4A7C59]"

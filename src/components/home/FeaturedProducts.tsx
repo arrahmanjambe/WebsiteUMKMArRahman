@@ -12,7 +12,7 @@ export default function FeaturedProducts() {
   const { addItem, openCart } = useCart();
 
   const handleAdd = (product: (typeof PRODUCTS)[0]) => {
-    addItem(product);
+    addItem(product, 1);
     openCart();
   };
 
