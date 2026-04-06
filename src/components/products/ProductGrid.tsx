@@ -1,17 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import { PRODUCTS, PRODUCT_CATEGORIES } from "@/data/products";
 import ProductCard from "./ProductCard";
 import { cn } from "@/lib/utils";
 
 export default function ProductGrid() {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const searchParams = useSearchParams();
+  const router = useRouter();
 
+  // Ambil category dari URL
+  const activeCategory = searchParams.get("cat") || "all";
+
+  // Filter produk
   const filtered =
     activeCategory === "all"
       ? PRODUCTS
       : PRODUCTS.filter((p) => p.category === activeCategory);
+
+  // Handler klik kategori → update URL
+  const handleCategoryChange = (catId: string) => {
+    if (catId === "all") {
+      router.push("/products");
+    } else {
+      router.push(`/products?cat=${catId}`);
+    }
+  };
 
   return (
     <div>
@@ -20,7 +34,7 @@ export default function ProductGrid() {
         {PRODUCT_CATEGORIES.map((cat) => (
           <button
             key={cat.id}
-            onClick={() => setActiveCategory(cat.id)}
+            onClick={() => handleCategoryChange(cat.id)}
             className={cn(
               "px-4 py-2 rounded-full text-sm font-medium transition-all",
               activeCategory === cat.id
@@ -29,7 +43,10 @@ export default function ProductGrid() {
             )}
             style={
               activeCategory === cat.id
-                ? { backgroundColor: "var(--color-primary)", borderColor: "transparent" }
+                ? {
+                    backgroundColor: "var(--color-primary)",
+                    borderColor: "transparent",
+                  }
                 : {
                     borderColor: "var(--color-surface-alt)",
                     color: "var(--color-text-muted)",
@@ -49,10 +66,14 @@ export default function ProductGrid() {
         ))}
       </div>
 
+      {/* Empty state */}
       {filtered.length === 0 && (
         <div className="text-center py-20">
           <p className="text-4xl mb-3">🎋</p>
-          <p className="font-display text-xl" style={{ color: "var(--color-text-muted)" }}>
+          <p
+            className="font-display text-xl"
+            style={{ color: "var(--color-text-muted)" }}
+          >
             Tidak ada produk di kategori ini
           </p>
         </div>

@@ -47,9 +47,10 @@ export default function FeaturedProducts() {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {FEATURED.map((product, index) => (
-              <article
+          {FEATURED.map((product) => (
+            <Link
               key={product.id}
+              href={`/products/${product.slug}`}
               className="group rounded-2xl overflow-hidden border flex flex-col transition-[transform,box-shadow] hover:-translate-y-1 hover:shadow-xl"
               style={{
                 backgroundColor: "var(--color-surface)",
@@ -79,22 +80,13 @@ export default function FeaturedProducts() {
 
               {/* Content */}
               <div className="flex flex-col flex-1 p-5">
-                <p
-                  className="text-xs tracking-wide uppercase mb-1"
-                  style={{ color: "var(--color-text-muted)" }}
-                >
+                <p className="text-xs tracking-wide uppercase mb-1" style={{ color: "var(--color-text-muted)" }}>
                   {product.category}
                 </p>
-                <h3
-                  className="font-display text-xl font-medium mb-2"
-                  style={{ color: "var(--color-text-main)" }}
-                >
+                <h3 className="font-display text-xl font-medium mb-2" style={{ color: "var(--color-text-main)" }}>
                   {product.name}
                 </h3>
-                <p
-                  className="text-sm leading-relaxed line-clamp-2 flex-1"
-                  style={{ color: "var(--color-text-muted)" }}
-                >
+                <p className="text-sm leading-relaxed line-clamp-2 flex-1" style={{ color: "var(--color-text-muted)" }}>
                   {product.description}
                 </p>
 
@@ -119,17 +111,22 @@ export default function FeaturedProducts() {
                       </p>
                     )}
                   </div>
+
+                  {/* ⚠️ IMPORTANT: prevent redirect */}
                   <button
-                    onClick={() => handleAdd(product)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      handleAdd(product);
+                    }}
                     className="w-10 h-10 rounded-full flex items-center justify-center text-white transition-all hover:scale-110 active:scale-95"
                     style={{ backgroundColor: "var(--color-primary)" }}
-                    aria-label={`Tambah ${product.name} ke keranjang`}
                   >
                     <ShoppingBag size={16} />
                   </button>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

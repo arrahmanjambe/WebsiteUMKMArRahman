@@ -15,7 +15,7 @@ const FOOTER_LINKS = [
   {
     title: "Produk",
     links: [
-      { href: "/products?cat=topi", label: "Topi Pantai" },
+      { href: "/products?cat=topi", label: "Topi" },
       { href: "/products?cat=peci", label: "Peci" },
       // { href: "/products?cat=custom", label: "Custom Order" },
       // { href: "/kemitraan", label: "Jadi Reseller" },

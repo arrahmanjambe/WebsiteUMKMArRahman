@@ -138,16 +138,15 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       "Mendorong diskusi tentang perlindungan warisan budaya kerajinan bambu",
     ],
     year: "2023",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+    image: "https://res.cloudinary.com/dpctuucy8/image/upload/v1775468534/Foto_Produk_koq2kc.png",
   },
 
   stats: [
-    { label: "Tahun Pengalaman", value: "6+", suffix: "" },
+    { label: "Tahun Pengalaman", value: "15+", suffix: "" },
     { label: "Produk Terjual", value: "10.000+", suffix: "" },
     { label: "Pengrajin Binaan", value: "25+", suffix: "" },
-    { label: "Negara Ekspor", value: "5+", suffix: "" },
-    { label: "Workshop Digelar", value: "12+", suffix: "" },
-    { label: "Mitra Aktif", value: "50+", suffix: "" },
+    { label: "Workshop Digelar", value: "7+", suffix: "" },
+    { label: "Mitra Aktif", value: "5+", suffix: "" },
   ],
 
   services: [

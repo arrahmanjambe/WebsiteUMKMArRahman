@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Anyaman Bambu AR Rahman Jambe",
     title: "Anyaman Bambu AR Rahman Jambe — Kerajinan Bambu Premium Tangerang",
     description:
-      "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Ramah lingkungan, buatan tangan, ekspor global.",
+      "Kerajinan anyaman bambu tradisional premium dari Tangerang, Jawa Barat. Ramah lingkungan, buatan tangan.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1590664863685-a99ef05e9f61?w=1200&q=80",

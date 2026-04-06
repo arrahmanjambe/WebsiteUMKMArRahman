@@ -7,7 +7,7 @@ export default function StatsSection() {
       style={{ backgroundColor: "var(--color-primary)" }}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {ABOUT_DATA.stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="font-display text-4xl md:text-5xl font-bold text-white">

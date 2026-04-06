@@ -68,7 +68,7 @@ export const FAQ_ITEMS: FAQItem[] = [
     category: "pengiriman",
     question: "Apakah melayani pengiriman ke luar kota atau luar negeri?",
     answer:
-      "Ya, kami melayani:\n• Pengiriman ke seluruh Indonesia via JNE, J&T, SiCepat, dan ekspedisi lainnya\n• Ekspor internasional sesuai kesepakatan\n\nUntuk pengiriman internasional, silakan hubungi kami terlebih dahulu untuk pembahasan detail biaya dan prosedur ekspor.",
+      "Ya, kami melayani:\n• Pengiriman ke seluruh Indonesia via JNE, J&T, SiCepat, dan ekspedisi lainnya \n\nUntuk pengiriman, silakan hubungi kami terlebih dahulu untuk pembahasan detail biaya.",
   },
   {
     id: "faq-008",

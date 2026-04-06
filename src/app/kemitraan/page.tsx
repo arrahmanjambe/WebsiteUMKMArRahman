@@ -44,7 +44,7 @@ export default function KemitraanPage() {
             anyaman bambu premium yang dicintai pelanggan di seluruh Indonesia hingga mancanegara.
           </p>
           <a
-            href="https://wa.me/62895411907532?text=Halo,%20saya%20tertarik%20menjadi%20mitra%20Anyaman%20Bambu%20AR%20Rahman%20Jambe"
+            href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20menjadi%20mitra%20Anyaman%20Bambu%20AR%20Rahman%20Jambe"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-105"
@@ -104,7 +104,7 @@ export default function KemitraanPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
             <a
-              href="https://wa.me/62895411907532"
+              href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-all hover:opacity-90 hover:scale-105"

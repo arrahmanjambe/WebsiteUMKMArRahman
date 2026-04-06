@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Award, Globe, Leaf } from "lucide-react";
+import { ArrowRight, Award, Globe, Hand, Leaf } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const BADGES = [
   { icon: Leaf, text: "100% Alami" },
-  { icon: Globe, text: "Ekspor Global" },
   { icon: Award, text: "UNESCO Featured" },
+  { icon: Hand, text: "Empowering Local Hands" },
 ];
 
 export default function HeroSection() {
@@ -189,6 +189,8 @@ export default function HeroSection() {
                 "🌿 100% Ramah Lingkungan",
                 "🏆 UNESCO Creative Cities Featured",
                 "🎓 Workshop & Pelatihan",
+                " 🕊 Empowering Local Hands",
+                "📈 Ribuan Unit Terjual",  
               ].map((item) => (
                 <span
                   key={item}

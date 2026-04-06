@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { ShoppingBag, Star, Zap } from "lucide-react";
 import { Product, formatPrice } from "@/data/products";
@@ -18,7 +19,8 @@ export default function ProductCard({ product }: Props) {
   };
 
   return (
-    <article
+    <Link
+      href={`/products/${product.slug}`}
       className="group rounded-2xl overflow-hidden border flex flex-col transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-xl"
       style={{
         backgroundColor: "var(--color-surface)",
@@ -127,6 +129,6 @@ export default function ProductCard({ product }: Props) {
           </button>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }

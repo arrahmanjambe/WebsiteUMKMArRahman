@@ -16,7 +16,7 @@ export default function CartSidebar() {
     const msg = encodeURIComponent(
       `Halo, saya ingin memesan:\n\n${items}\n\n*Total: ${formatPrice(totalPrice)}*\n\nMohon konfirmasi ketersediaan stok. Terima kasih!`
     );
-    window.open(`https://wa.me/62895411907532?text=${msg}`, "_blank");
+    window.open(`https://wa.me/6281234567890?text=${msg}`, "_blank");
   };
 
   return (

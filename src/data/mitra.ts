@@ -125,16 +125,6 @@ export const MITRA_LIST: Mitra[] = [
     since: "2022",
   },
   {
-    id: "mitra-005",
-    name: "Bamboo Life Australia",
-    type: "distributor",
-    location: "Australia (Ekspor)",
-    description: "Importir produk bambu Indonesia untuk pasar Australia dan Selandia Baru.",
-    since: "2023",
-    testimonial:
-      "AR Rahman Jambe is one of the most reliable bamboo craft producers from Indonesia. Quality and delivery are always on point.",
-  },
-  {
     id: "mitra-006",
     name: "Eco Souvenir Jakarta",
     type: "reseller",

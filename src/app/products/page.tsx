@@ -8,18 +8,18 @@ export const metadata: Metadata = {
     "Temukan koleksi lengkap topi pantai dan peci anyaman bambu premium AR Rahman Jambe. Ready stock tersedia. Pengiriman ke seluruh Indonesia.",
 };
 
-// const HIGHLIGHTS = [
-//   // {
-//   //   icon: Truck,
-//   //   title: "Pengiriman Cepat",
-//   //   desc: "Ready stock dikirim 1–3 hari kerja",
-//   // },
-//   // {
-//   //   icon: Shield,
-//   //   title: "Garansi Kualitas",
-//   //   desc: "Produk rusak akan kami ganti",
-//   // },
-// ];
+const HIGHLIGHTS = [
+  {
+    icon: Truck,
+    title: "Pengiriman Cepat",
+    desc: "Ready stock dikirim 1–3 hari kerja",
+  },
+  {
+    icon: Shield,
+    title: "Garansi Kualitas",
+    desc: "Produk rusak akan kami ganti",
+  },
+];
 
 export default function ProductsPage() {
   return (
@@ -47,7 +47,7 @@ export default function ProductsPage() {
           </div>
 
           {/* Highlights */}
-          {/* <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-4 mt-8">
             {HIGHLIGHTS.map(({ icon: Icon, title, desc }) => (
               <div
                 key={title}
@@ -68,7 +68,7 @@ export default function ProductsPage() {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
