@@ -3,8 +3,8 @@ export const ABOUT_DATA = {
     name: "Anyaman Bambu AR Rahman Jambe",
     tagline: "Dari Tangan Pengrajin Lokal, Untuk Dunia",
     established: "2018",
-    location: "MGM5+24R, Ancol Pasir, Kec. Jambe, Kabupaten Tangerang, Banten 15720, Indonesia",
-    coordinates: { lat: -6.3174472, lng: 106.5077027 },
+    location: "Desa Ancol Pasir, Kec. Jambe, Kabupaten Tangerang, Banten 15720, Indonesia",
+    coordinates: { lat: -6.3173687, lng: 106.5076816 },
     description:
       "Anyaman Bambu AR-Rahman Jambe lahir dari kecintaan mendalam terhadap tradisi kerajinan bambu yang telah diwariskan turun-temurun di Tangerang. Kami percaya bahwa produk lokal Indonesia mampu bersaing dan bersinar di panggung global.",
     vision:

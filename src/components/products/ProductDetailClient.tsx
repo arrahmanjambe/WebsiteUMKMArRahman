@@ -320,8 +320,9 @@ export default function ProductDetailClient({ product }: Props) {
                 href={waLink(`Halo, saya ingin tanya tentang produk Anda yaitu ${product.name}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors hover:bg-[#4A7C59] hover:text-white hover:border-[#4A7C59]"
-                style={{ borderColor: "var(--color-primary)", color: "var(--color-primary)" }}
+                className="text-xs font-medium px-3 py-1.5 rounded-lg border 
+                            text-primary border-primary
+                            hover:bg-primary hover:text-white"
               >
                 Chat Toko
               </a>
