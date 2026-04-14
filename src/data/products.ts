@@ -66,7 +66,6 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
   { id: "all",    name: "Semua Produk", description: "Lihat semua koleksi kami" },
   { id: "topi",   name: "Topi",         description: "Koleksi topi anyaman premium" },
   { id: "peci",   name: "Peci",         description: "Peci tradisional berkualitas" },
-  // { id: "custom", name: "Custom Order", description: "Pesanan sesuai kebutuhan" },
 ];
 
 export const PRODUCTS: Product[] = [

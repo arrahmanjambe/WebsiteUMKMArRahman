@@ -57,11 +57,11 @@ export const SITE_CONFIG = {
     // Nomor WA tanpa + atau 0 di depan, pakai 62 (kode negara Indonesia)
     // Contoh: 08123456789 → 62895411907532 (Ubah 0 pertama → 62)
     whatsapp: "62895411907532",
-    email: "hello@arrahman-bambu.id",
+    email: "arrahmanjambe@gmail.com",
     address: "Desa Mulyasari, Kec. Ciawi, Tasikmalaya, Jawa Barat",
-    instagram: "https://instagram.com/arrahman.bambu",
-    youtube: "https://youtube.com/@arrahmanbambu",
-    maps: "https://maps.google.com/?q=-7.2575,108.1057",
+    instagram: "https://www.instagram.com/arrahmanjambe_",
+    youtube: "https://youtube.com/@ArRahmanJambe",
+    maps: "https://maps.app.goo.gl/s1DmWjy3WiCBsctSA",
   },
 };
 

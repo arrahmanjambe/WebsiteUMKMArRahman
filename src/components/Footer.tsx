@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Leaf, MapPin, Phone, Mail, Instagram, Youtube } from "lucide-react";
+import { Leaf, MapPin, Phone, Mail } from "lucide-react";
+import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
 const FOOTER_LINKS = [
   {
@@ -58,10 +59,11 @@ export default function Footer() {
             </Link>
             <div className="flex gap-3 mt-5">
               {[
-                { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/arrahmanjambe_" },
-                { icon: Youtube, label: "YouTube", href: "https://youtube.com/@ArRahmanJambe" },
+                { icon: FaInstagram, label: "Instagram", href: "https://www.instagram.com/arrahmanjambe_" },
+                { icon: FaYoutube, label: "YouTube", href: "https://youtube.com/@ArRahmanJambe" },
                 { icon: MapPin, label: "Lokasi", href: "https://maps.app.goo.gl/s1DmWjy3WiCBsctSA" },
                 { icon: Phone, label: "WhatsApp", href: "https://wa.me/62895411907532" },
+                { icon: FaTiktok, label: "TikTok", href: "https://www.tiktok.com/@arrahman.jambe" },
                 { icon: Mail, label: "Email", href: "mailto:arrahmanjambe@gmail.com" }
               ].map(({ icon: Icon, label, href }) => (
                 <a
