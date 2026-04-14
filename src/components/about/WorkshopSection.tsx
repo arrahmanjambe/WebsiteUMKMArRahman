@@ -57,7 +57,7 @@ export default function WorkshopSection() {
                 </div>
                 <div className="flex items-center gap-2 text-xs" style={{ color: "var(--color-text-muted)" }}>
                   <Calendar size={11} style={{ color: "var(--color-primary)" }} />
-                  {ws.participants} peserta
+                  {ws.participants}
                 </div>
               </div>
             </div>

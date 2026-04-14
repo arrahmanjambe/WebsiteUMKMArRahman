@@ -112,7 +112,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
       organizer: "Kementerian Pariwisata dan Ekonomi Kreatif",
       location: "Desa Bojong Renged, Teluknaga, Tangerang",
       year: "2024",
-      participants: "100-150",
+      participants: "100-150an Peserta",
       description: "Pelaku subsektor kriya berbasis bambu dalam kegiatan Uji Petik PMK3I Kabupaten Tangerang.",
     },
     {

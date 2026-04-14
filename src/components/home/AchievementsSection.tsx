@@ -88,10 +88,7 @@ export default function AchievementsSection() {
                 style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-surface-alt)" }}
               >
                 <p className="font-display text-3xl font-bold" style={{ color: "var(--color-secondary)" }}>
-                  {workshops.reduce((s, w) => s + w.participants, 0)}+
-                </p>
-                <p className="text-xs mt-1" style={{ color: "var(--color-text-muted)" }}>
-                  Peserta Terlatih
+                  {workshops[0]?.participants}
                 </p>
               </div>
             </div>
