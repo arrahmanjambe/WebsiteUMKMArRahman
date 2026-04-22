@@ -145,7 +145,7 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
     { label: "Tahun Pengalaman", value: "20+", suffix: "" },
     { label: "Produk Terjual", value: "10.000+", suffix: "" },
     { label: "Pengrajin Binaan", value: "25+", suffix: "" },
-    { label: "Workshop Digelar", value: "6+", suffix: "" },
+    { label: "Workshop Digelar", value: "5+", suffix: "" },
     { label: "Mitra", value: "3+", suffix: "" },
   ],
 

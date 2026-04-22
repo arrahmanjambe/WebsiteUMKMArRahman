@@ -88,7 +88,7 @@ export default function AchievementsSection() {
                 style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-surface-alt)" }}
               >
                 <p className="font-display text-3xl font-bold" style={{ color: "var(--color-secondary)" }}>
-                  {workshops[0]?.participants}
+                  {workshops[4]?.participants}
                 </p>
               </div>
             </div>
