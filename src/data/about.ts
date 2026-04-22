@@ -127,26 +127,26 @@ Kini, Ahmad tidak hanya dikenal sebagai pengrajin handal, tetapi juga sebagai ed
   ],
 
   unesco: {
-    title: "Diakui Dunia: UNESCO Creative Cities",
-    subtitle: "Menarik Perhatian Dunia",
+    title: "Vitasi UNESCO Creative City Network (UCCN)",
+    subtitle: "Jambe Jadi Sorotan Dunia",
     description:
-      "Pada 2023, delegasi dari UNESCO Creative Cities Network mengunjungi Tangerang dan menjadikan AR Rahman Jambe sebagai salah satu showcas utama kerajinan lokal. Kunjungan ini menjadi pengakuan internasional bahwa tradisi anyaman bambu Tangerang layak mendapat perhatian dunia.",
+      "Pada 2024, Kecamatan Jambe di Kabupaten Tangerang, khususnya Desa Ancol Pasir, menjadi salah satu lokasi visitasi Tim Penilai Nasional dalam pengajuan Kabupaten Tangerang ke UNESCO Creative Cities Network (UCCN). Kerajinan kriya bambu, seperti topi dan peci anyaman bambu khas Jambe, diangkat sebagai ikon ekonomi kreatif unggulan dalam kategori Crafts and Folk Art.",
     highlights: [
-      "Dikunjungi delegasi dari 8 negara anggota UNESCO Creative Cities",
-      "Dipresentasikan sebagai model UMKM berkelanjutan berbasis kearifan lokal",
-      "Produk AR Rahman Jambe masuk rekomendasi artisan Indonesia untuk jaringan UNESCO",
-      "Mendorong diskusi tentang perlindungan warisan budaya kerajinan bambu",
+      "Kerajinan topi bambu dan peci anyaman bambu di Desa Ancol Pasir menjadi fokus utama",
+      "Tim Penilai Nasional UCCN melakukan visitasi ke sentra pengrajin bambu di Kecamatan Jambe",
+      "Kemenparekraf memberikan dukungan penuh terhadap pengembangan ekonomi kreatif berbasis budaya lokal",
+      "Jambe diarahkan menjadi pusat sentra anyaman bambu dan bagian dari kampung budaya Kabupaten Tangerang",
     ],
-    year: "2023",
+    year: "2024",
     image: "https://res.cloudinary.com/dpctuucy8/image/upload/v1775468534/Foto_Produk_koq2kc.png",
   },
 
   stats: [
-    { label: "Tahun Pengalaman", value: "15+", suffix: "" },
+    { label: "Tahun Pengalaman", value: "20+", suffix: "" },
     { label: "Produk Terjual", value: "10.000+", suffix: "" },
     { label: "Pengrajin Binaan", value: "25+", suffix: "" },
-    { label: "Workshop Digelar", value: "7+", suffix: "" },
-    { label: "Mitra Aktif", value: "5+", suffix: "" },
+    { label: "Workshop Digelar", value: "6+", suffix: "" },
+    { label: "Mitra", value: "3+", suffix: "" },
   ],
 
   services: [
